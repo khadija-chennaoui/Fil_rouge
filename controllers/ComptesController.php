@@ -20,26 +20,34 @@ class ComptesController
         return $mode->Afficher();
         header('location:comptes');
     }
+    public function afichClient()
+    {
+        $mode = new comptes();
+        return $mode->AffichClient();
+        // header('location:comptes');
+    }
+    
     public function connection()
     {
         if (isset($_POST['save'])) {
-            if (isset($_POST['emailcon']) && isset($_POST['passcon'])) {
+           
+                        if (isset($_POST['emailcon']) && isset($_POST['passcon'])) {
                 $mode = new comptes();
                 $email = $_POST['emailcon'];
                 $pass = $_POST['passcon'];
-                $req = $mode->GetData("SELECT * FROM comptes WHERE email LIKE ? AND PasswordC  LIKE ? AND Role_Con LIKE ?");
+                
+                $req = $mode->GetData("SELECT * FROM comptes WHERE email = ? AND PasswordC  = ? AND Role_Con = ?");
                 $req->execute([$email, $pass,'Client']);
-                $req = $req->fetch();
-                if ($req) {
+                $foo = $req->rowCount();                    
+                if ($foo == 1) {
+                  
                     session_start();
-                    $_SESSION['email'] = $email;
-    
+                    $_SESSION['email']=$email;
                     header('location:shop-left-sidebar');
+                    exit();
                 } else {
-                    var_dump($req);
+                    header('location:comptes');
                 }
-
-
                 $sql = $mode->GetData("SELECT * FROM comptes WHERE email LIKE ? AND PasswordC  LIKE ? AND Role_Con LIKE ?");
                 $sql->execute([$email, $pass, 'Admin']);
                 $sql = $sql->fetch();
@@ -49,7 +57,6 @@ class ComptesController
                    
                     header('location:dash');
                 } else {
-
                     header('location:comptes');
                 }
             }
@@ -75,4 +82,19 @@ class ComptesController
             }
         }
     }
+
+
+    public function nombreClient()
+    {
+        $sql="SELECT * FROM comptes WHERE Role_Con='Client'";
+        $mode=new comptes();
+        $mode=$mode->GetData($sql);
+        $mode->execute();
+        $mode=$mode->fetchAll();
+        return count($mode);
+  
+
+    }
+
+    
 }

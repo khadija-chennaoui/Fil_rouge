@@ -62,7 +62,7 @@
                         <label for="pass" class="form-label">Mot De Passe:</label>
                         <input type="password" class="form-control" id="pass"name="passcon" required data-parsley-trigger="change">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-4" name="save">CONNEXTION</button>
+                    <button type="submit" class="btn btn-primary mt-4" name="save">CONNEXION</button>
                 </form>
             </div>
             <!---------------------- Sign Up ---------------------->

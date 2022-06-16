@@ -1,3 +1,15 @@
+<?php
+session_start();
+    if(!isset($_SESSION['email']))
+    {
+      echo '
+            <script>
+                window.location.href = "comptes";
+            </script>
+        ';
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -25,10 +37,10 @@
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
-          <?php $produitcontrol = new ProduitController();
-                $produit = $produitcontrol->getProduit(); ?>
+       
             <div class="box-topic">Total Order</div>
-            <div class="number">40,876</div>
+            <div class="number">   <?php $Client= new ComptesController();
+             echo $Client->nombreClient();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -39,7 +51,8 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Sales</div>
-            <div class="number">38,876</div>
+            <div class="number"><?php $Client= new ProduitController();
+             echo $Client->nombreProduit();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -50,7 +63,8 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Profit</div>
-            <div class="number">$12,876</div>
+            <div class="number"><?php $Client= new ProduitController();
+             echo $Client->quantityProduit();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -58,17 +72,7 @@
           </div>
           <i class='bx bx-cart cart three'></i>
         </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">11,086</div>
-            <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-download cart four'></i>
-        </div>
+       
       </div>
     </div>
   </section>

@@ -47,4 +47,31 @@ class ProduitController
         return  $p->Select($id);
     }
 
+
+    
+    public function nombreProduit()
+    {
+        $sql="SELECT * FROM produits";
+        $mode=new produits();
+        $mode=$mode->GetData($sql);
+        $mode->execute();
+        $mode=$mode->fetchAll();
+        return count($mode);
+  
+
+    }
+
+      
+    public function quantityProduit()
+    {
+        $sql="SELECT SUM(quanti) FROM produits";
+        $mode=new produits();
+        $mode=$mode->GetData($sql);
+        $mode->execute();
+        $mode= $mode->fetchAll();
+        $mode=array_sum(array:$mode[0]);
+       return $mode/2;
+  
+
+    }
 } 

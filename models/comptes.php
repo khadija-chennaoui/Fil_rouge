@@ -55,6 +55,13 @@ public function Ajouterclient(){
        return $this->connect()->query("SELECT * FROM  comptes ORDER BY id desc")->fetchALL();
       }catch(PDOException $e){ return $e->getMessage();} 
     }
+    public function AffichClient()
+    {   
+      try{
+    
+         return $this->connect()->query("SELECT * FROM  comptes WHERE Role_Con = 'Client'")->fetchALL();
+        }catch(PDOException $e){ return $e->getMessage();} 
+      }
    
 }
 ?>

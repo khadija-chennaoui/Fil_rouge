@@ -1,3 +1,14 @@
+
+<?php session_start();
+    if(!isset($_SESSION['email']))
+    {
+      echo '
+            <script>
+                window.location.href = "comptes";
+            </script>
+        ';
+    } ?>
+
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">

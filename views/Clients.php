@@ -1,3 +1,13 @@
+
+<?php session_start();
+    if(!isset($_SESSION['email']))
+    {
+      echo '
+            <script>
+                window.location.href = "comptes";
+            </script>
+        ';
+    } ?>
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
@@ -38,7 +48,7 @@
               </thead>
               <tbody>
               <?php $clientcontrol = new ComptesController();
-                $client = $clientcontrol->getClient();
+                $client = $clientcontrol->afichClient();
                 foreach ($client as $rows) {
                 ?>
                 <tr>

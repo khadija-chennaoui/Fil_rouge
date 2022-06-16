@@ -9,8 +9,7 @@ if(basename($_SERVER['REQUEST_URI'])=="about"|| basename($_SERVER['REQUEST_URI']
  include_once('views/include/navbar.php'); 
 }
 $home =new HomeController();
-$page=['about','index','shop-left-sidebar','comptes','dash','Clients','produits','operation','404',];
-
+$page=['about','index','shop-left-sidebar','comptes','dash','Clients','produits','operation','deconnecter','404',];
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$page)){
         $home->index($_GET['page']);

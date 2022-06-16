@@ -3,7 +3,6 @@
       $Controller = new ComptesController();
       $Controller->connection();
       $Controller->addclient();
-     
       $Controller->acheter();
   
 $Controller = new ProduitController();
