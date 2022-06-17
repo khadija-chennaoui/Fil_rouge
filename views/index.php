@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="product_variant_quantity d-flex align-items-center">
-                        <button class="btn btn-link " type="submit" style="left: 99px;text-align: center; margin-top: 103px;color: #dee2e5; background: darkgoldenrod;"><a href="shop-left-sidebar.php">Consulter</a> </button>  
+                        <button class="btn btn-link " type="submit" style="left: 99px;text-align: center; margin-top: 103px;color: #dee2e5; background: darkgoldenrod;"><a href="shop-left-sidebar">Consulter</a> </button>  
                     </div>
                 </div>    
             </div>

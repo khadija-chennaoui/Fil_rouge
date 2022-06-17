@@ -38,36 +38,36 @@ session_start();
         <div class="box">
           <div class="right-side">
        
-            <div class="box-topic">Total Order</div>
+            <div class="box-topic">Total Clients</div>
             <div class="number">   <?php $Client= new ComptesController();
              echo $Client->nombreClient();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <span class="text">Up from </span>
             </div>
           </div>
           <i class='bx bx-cart-alt cart'></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
+            <div class="box-topic">Total Produits</div>
             <div class="number"><?php $Client= new ProduitController();
              echo $Client->nombreProduit();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <span class="text">Up from </span>
             </div>
           </div>
           <i class='bx bxs-cart-add cart two'></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Profit</div>
+            <div class="box-topic"> Quantiter Total </div>
             <div class="number"><?php $Client= new ProduitController();
              echo $Client->quantityProduit();   ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
+              <span class="text">Up from </span>
             </div>
           </div>
           <i class='bx bx-cart cart three'></i>

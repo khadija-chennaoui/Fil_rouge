@@ -36,14 +36,14 @@
     <div class="home-content">
       <div class="sales-boxes d-flex justify-content-center ">
         <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
+          <div class="title">Les Clients</div>
           <div class="table-responsive">
             <table class="table table-hover">
               <thead>
                 <tr>
                 <th scope="col">Nom Complet</th>  
                 <th scope="col">E-mail</th>
-                  <th scope="col">Password</th>
+                  <th scope="col">Téléphone</th>
                 </tr>
               </thead>
               <tbody>
@@ -55,7 +55,7 @@
                 <td hidden data-target="id"><?= $rows['id']; ?></td>
                 <td><?= $rows['nom']?></td>  
                 <td><?= $rows['email']?></td>
-                  <td><?= $rows['PasswordC']?></td>
+                  <td><?='0'. $rows['tele']?></td>
                 </tr>
                 <?php } ?>
               </tbody>
