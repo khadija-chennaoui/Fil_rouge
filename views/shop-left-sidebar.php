@@ -52,17 +52,17 @@
                         <div class="shop_sidebar_widget">
                             <div class="shop_widget_list categories">
                                 <div class="shop_widget_title categories_title">
-                                    <h3>Categories</h3>
+                                    <h3>Acheter maintenant</h3>
                                 </div>
                                 <div class="widget_categories pb-5 mb-5">
                                     <ul>
-                                        <li><a> OR </a></li>
+                                        <li><a>L'OR </a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="shop_widget_thumb">
+                            <!-- <div class="shop_widget_thumb">
                                 <img src="views/assets/img/others/nov.png" alt="">
-                            </div>
+                            </div> -->
                         </div>
                         <div class="shop_right_sidaber">
                             <div class="shop_gallery">

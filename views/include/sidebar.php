@@ -22,12 +22,12 @@
           <span class="links_name">Clients</span>
         </a>
       </li>
-      <!-- <li>
-        <a href="index" class="active">
-          <i class='bx bx-list-ul'></i>
-          <span class="links_name">Consulter le site</span>
+      <li>
+        <a href="index">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Vister le site</span>
         </a>
-      </li> -->
+      </li>
       <li class="log_out">
         <a href="deconnecter">
           <i class='bx bx-log-out'></i>

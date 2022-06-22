@@ -1,29 +1,26 @@
-
 <?php session_start();
-    if(!isset($_SESSION['email']))
-    {
-      echo '
+if (!isset($_SESSION['email'])) {
+  echo '
             <script>
                 window.location.href = "comptes";
             </script>
         ';
-    } ?>
+} ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="views/assets/css/styl2.css">
   <!-- Boxicons CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
 <body>
- 
+
   <section class="home-section">
     <nav>
       <div class="sidebar-button">
@@ -39,22 +36,22 @@
             <table class="table table-hover">
               <thead>
                 <tr>
-                <th scope="col">Nom Complet</th>  
-                <th scope="col">E-mail</th>
+                  <th scope="col">Nom Complet</th>
+                  <th scope="col">E-mail</th>
                   <th scope="col">Téléphone</th>
                 </tr>
               </thead>
               <tbody>
-              <?php $clientcontrol = new ComptesController();
+                <?php $clientcontrol = new ComptesController();
                 $client = $clientcontrol->afichClient();
                 foreach ($client as $rows) {
                 ?>
-                <tr>
-                <td hidden data-target="id"><?= $rows['id']; ?></td>
-                <td><?= $rows['nom']?></td>  
-                <td><?= $rows['email']?></td>
-                  <td><?='0'. $rows['tele']?></td>
-                </tr>
+                  <tr>
+                    <td hidden data-target="id"><?= $rows['id']; ?></td>
+                    <td><?= $rows['nom'] ?></td>
+                    <td><?= $rows['email'] ?></td>
+                    <td><?= '0' . $rows['tele'] ?></td>
+                  </tr>
                 <?php } ?>
               </tbody>
             </table>
@@ -66,7 +63,7 @@
   <script>
     let sidebar = document.querySelector(".sidebar");
     let sidebarBtn = document.querySelector(".sidebarBtn");
-    sidebarBtn.onclick = function () {
+    sidebarBtn.onclick = function() {
       sidebar.classList.toggle("active");
       if (sidebar.classList.contains("active")) {
         sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
@@ -75,4 +72,5 @@
     }
   </script>
 </body>
+
 </html>

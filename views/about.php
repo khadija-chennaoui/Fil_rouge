@@ -8,8 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   
-   
+  
    <!-- Add site Favicon -->
    <link rel="icon" href="views/assets/img/logo/jdid.png" sizes="32x32" />
    <link rel="icon" href="views/assets/img/logo/jdid.png"sizes="192x192" /> 
@@ -27,7 +26,7 @@
 
     </head>
     <body>
-    <!-- hero banner section start -->
+
     <section class="hero_about_section d-flex align-items-center" data-bgimg="views/assets/img/bg/b1.png">
         <div class="container">
             <div class="row">
@@ -44,9 +43,6 @@
             </div>
         </div>
     </section>
-    <!-- hero banner section end -->
-
-    <!-- about luxury section start -->
     <section class="about_luxury_section">
         <div class="container-fluid">
             <div class="row no-gutters">
@@ -75,9 +71,6 @@
             </div>
         </div>
     </section>
-    <!-- about luxury section end -->
-
-     <!-- about vision section start -->
      <section class="about_vision_section">
         <div class="container">
             <div class="row">
@@ -88,7 +81,6 @@
                                 <h3 class="wow fadeInUp">VILLE</h3>
                                 <p class="wow fadeInUp"> SAFI<br> 13 KISSARIA CENTRE VILLE  20250 SAFI<br>Horaires d’ouverture<br> Lundi : 15h à 19h30<br>Mardi : 10h à 12h30 / 15h30 à 19h30<br>Mercredi : 10h à 12h30 / 15h30 à 19h30<br> Jeudi : 10h à 12h30 / 15h30 à 19h30<br> Vendredi : 10h à 12h30 / 15h30 à 19h30<br>Samedi : 10h à 12h30 / 15h30 à 19h30<br>Dimanche : Fermé</p>
                             </div>
-                       
                         </div>
                         <div class="about_vision_thumb">
                             <img class="rounded"src="views/assets/img/bg/vil.png" alt="">
@@ -98,9 +90,6 @@
             </div>
         </div>
     </section>
-    <!-- about vision section end -->
-
-    <!-- our team section start -->
     <section class="our_team_section">
         <div class="container">
             <div class="row">
@@ -134,6 +123,5 @@
             </div>
         </div>
     </section>
-    <!-- our team section end -->
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- Add site Favicon -->
-    <link rel="icon" href="views/assets/img/logo/jdid.png" sizes="32x32" />
-    <link rel="icon" href="views/assets/img/logo/jdid.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="views/assets/img/logo/jdid.png"/>
     <meta name="msapplication-TileImage" content="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-270x270.png" />
     <link rel="stylesheet" type="text/css" href="http://parsleyjs.org/src/parsley.css" />
     <!--=========CSS===============-->
@@ -23,8 +20,8 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="views/assets/css/style.css">
 </head>
+
 <body>
-    <!--header area end-->
     <div class="breadcrumbs_area">
         <div class="container">
             <div class="row">
@@ -60,7 +57,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="pass" class="form-label">Mot De Passe:</label>
-                        <input type="password" class="form-control" id="pass"name="passcon" required data-parsley-trigger="change">
+                        <input type="password" class="form-control" id="pass" name="passcon" required data-parsley-trigger="change">
                     </div>
                     <button type="submit" class="btn btn-primary mt-4" name="save">CONNEXION</button>
                 </form>
