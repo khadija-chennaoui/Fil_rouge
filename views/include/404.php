@@ -8,31 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body class="bg-dark">
+<body class="">
     
 <div class="position-absolute top-50 start-50 translate-middle">
     <h1 class="text-danger text-center">OOOOPS!!</h1>
 <h2 class="text-danger text-center">Tu fait quoi ici??</h2>
-<hr class="text-light text-center "></hr>
-<h1 class="text-center text-light">404</h1>
-
-<div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+<hr class="text-dark text-center "></hr>
+<h1 class="text-center text-dark">404 </h1> 
+<h2 class="text-center text-dark">Pas trouvé</h2>
 </div>
 </body>
 </html>
