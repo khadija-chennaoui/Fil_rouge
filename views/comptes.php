@@ -10,7 +10,7 @@
     <!-- Add site Favicon -->
     <link rel="icon" href="views/assets/img/logo/jdid.png" sizes="32x32" />
     <link rel="icon" href="views/assets/img/logo/jdid.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="views/assets/img/logo/jdid.png" />
+    <link rel="apple-touch-icon" href="views/assets/img/logo/jdid.png"/>
     <meta name="msapplication-TileImage" content="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-270x270.png" />
     <link rel="stylesheet" type="text/css" href="http://parsleyjs.org/src/parsley.css" />
     <!--=========CSS===============-->

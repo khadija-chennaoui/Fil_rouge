@@ -4,8 +4,7 @@ require_once('./autoload.php');
 require_once('./controllers/HomeController.php');
 if(basename($_SERVER['REQUEST_URI'])=="dash"|| basename($_SERVER['REQUEST_URI'])=="Clients" || basename($_SERVER['REQUEST_URI'])=="produits"){
 include_once('views/include/sidebar.php'); }
-if(basename($_SERVER['REQUEST_URI'])=="about"|| basename($_SERVER['REQUEST_URI'])=="index" || basename($_SERVER['REQUEST_URI'])=="shop-left-sidebar" || basename($_SERVER['REQUEST_URI'])=="comptes"){
-//  include_once('views/include/links.php'); 
+if(!isset($_GET['page'])||basename($_SERVER['REQUEST_URI'])=="about"|| basename($_SERVER['REQUEST_URI'])=="index" || basename($_SERVER['REQUEST_URI'])=="shop-left-sidebar" || basename($_SERVER['REQUEST_URI'])=="comptes"){
  include_once('views/include/navbar.php'); 
 }
 $home =new HomeController();
@@ -19,7 +18,7 @@ if(isset($_GET['page'])){
 }else{
         $home->index('index');
     }
-    if(basename($_SERVER['REQUEST_URI'])=="about"|| basename($_SERVER['REQUEST_URI'])=="index" || basename($_SERVER['REQUEST_URI'])=="shop-left-sidebar" || basename($_SERVER['REQUEST_URI'])=="comptes"){
+    if(!isset($_GET['page'])||basename($_SERVER['REQUEST_URI'])=="about"|| basename($_SERVER['REQUEST_URI'])=="index" || basename($_SERVER['REQUEST_URI'])=="shop-left-sidebar" || basename($_SERVER['REQUEST_URI'])=="comptes"){
     include_once('views/include/footer.php');
     }
 
